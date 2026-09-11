@@ -43,7 +43,6 @@ jobs:
           java-version: '21'
 
       - name: Fetch Womtool
-        continue-on-error: true   # racecar: scan/report step, must not fail the build
         run: |
           curl -L -o womtool.jar https://github.com/broadinstitute/cromwell/releases/download/87/womtool-87.jar
 
